@@ -87,7 +87,7 @@ margin-top: 40px;
 
 .main-heading p{
     color: #777;
-    width: 500px;
+    width: 400px;
     margin: 0 auto 100px;
     line-height: 1.5;
     max-width: 100%;
@@ -503,7 +503,9 @@ header nav .form i:hover{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap:30px;
-    }
+}
+
+
 
 .pricing .plans .plan{
     background-color: #fcfcfc;
@@ -513,6 +515,13 @@ header nav .form i:hover{
     padding: 40px 16px;
     border-top: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
+}
+
+@media (max-width:767px) {
+    .pricing .plans{
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+        gap: 10px;
+    }  
 }
 
 .pricing .plans .plan .head h3{
